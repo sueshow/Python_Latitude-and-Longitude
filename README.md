@@ -19,15 +19,49 @@
 <br>
 
 ## 地址轉換經緯度
-- 方法一：
+- 方法一：明確名稱，較準確
 ```
+g = geocoder.osm('國立政治大學')
+g.json["lat"], g.json["lng"]
+g.latlng
 ```
 <br>
 
-- 方法二：
+- 方法二：完整地址，會有些誤差
 ```
+h = geocoder.arcgis('臺北市中山區集英里權西路35號8樓')
+h.json['lat'], h.json['lng']
+h.latlng
 ```
 <br>
+
+- 方法三：呼叫 Google API
+  - Google API設定：https://tutorials.webduino.io/zh-tw/docs/socket/useful/google-map-1.html
+```
+address = '你的地址'
+GOOGLE_PLACES_API_KEY = '你的 API KEY'
+
+def get_latitude_longtitude(address, GOOGLE_PLACES_API_KEY):
+    # decode url
+    # address = urllib.quote(address)
+    url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=' + GOOGLE_PLACES_API_KEY
+    
+    while True:
+        res = requests.get(url)
+        js = json.loads(res.text)
+
+        if js['status'] != 'OVER_QUERY_LIMIT':
+            time.sleep(1)
+            break
+
+    result = js['results'][0]['geometry']['location']
+    lat = result['lat'] # 緯度
+    lng = result['lng'] # 經度
+
+    return address, lat, lng
+
+get_latitude_longtitude(address, GOOGLE_PLACES_API_KEY)
+```
 
 ## 參考資料
 - https://hiking.biji.co/index.php?q=news&act=info&id=11787
