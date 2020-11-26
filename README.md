@@ -16,14 +16,10 @@
 ## 格式簡介
 - 經緯度：由經度、緯度合稱組成一個座標系統，又稱為地理座標系統，它是一種利用三度空間的球面來定義地球上的空間球面座標系統，能夠標示地球上的任何一個位置
 - 二分帶：將3D（地球圓球體）投影成平面2D，它將地表隔二度切為一個投影帶，因為切割更細所以其誤差也更小，台灣本島因較狹長所以都在同一投影帶內，不會造成使用上不便，成為國內製作各種圖籍標準
-<>
 
 ![二分帶](https://github.com/sueshow/Python_Latitude-and-Longitude/blob/master/picture/%E4%BA%8C%E5%88%86%E5%B8%B6_grid_02da.jpg)
 
-<br>
-
 ![類型分帶](https://github.com/sueshow/Python_Latitude-and-Longitude/blob/master/picture/%E5%88%86%E5%B8%B6%E9%A1%9E%E5%9E%8B.JPG)
-
 <br>
 
 ## 地址轉換經緯度
