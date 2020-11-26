@@ -37,6 +37,7 @@ h.latlng
 
 - 方法三：呼叫 Google API
   - Google API設定：https://tutorials.webduino.io/zh-tw/docs/socket/useful/google-map-1.html
+  - 範例：
 ```
 address = '你的地址'
 GOOGLE_PLACES_API_KEY = '你的 API KEY'
