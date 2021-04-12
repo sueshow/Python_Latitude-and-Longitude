@@ -142,7 +142,8 @@ get_latitude_longtitude(address, GOOGLE_PLACES_API_KEY)
 ```
 
 ## 參考資料
-- https://hiking.biji.co/index.php?q=news&act=info&id=11787
-- http://gis.rchss.sinica.edu.tw/qgis/?p=2823
-- [座標解讀](https://www.sunriver.com.tw/grid_tm2.htm)
-- [用 R 建構網格系統](https://kemushi54.github.io/R-basic/fishnet.html)
+* https://hiking.biji.co/index.php?q=news&act=info&id=11787
+* http://gis.rchss.sinica.edu.tw/qgis/?p=2823
+* [座標解讀](https://www.sunriver.com.tw/grid_tm2.htm)
+* [用 R 建構網格系統](https://kemushi54.github.io/R-basic/fishnet.html)
+* [計量地理學](http://homepage.ntu.edu.tw/~r07228005/1071QG/Mid1_ans.html)
