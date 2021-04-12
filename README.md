@@ -11,6 +11,79 @@
 - WGS84(全球性資料)：為 GPS 全球定位系统使用所建立的座標系統。通過遍佈世界的衛星觀測站所觀測到的座標建立 ＝> EPSG:4326
 - 類型：TWD67 二分帶(如等高線圖)、TWD67 經緯度、TWD97 二分帶(少用)、TWD97 經緯度、WGS84 經緯度(如一般非登山GPS、智慧手機、Google Map)
 - 註：TWD97、WGS84 極為相近(誤差很小)
+
+<table border="1" width="15%">
+    <tr>
+        <th width="5%">類型</a>
+        <th width="5%">坐標系統</a>
+        <th width="5%">說明</a>
+        <th width="5%">代碼</a>
+    </tr>
+    <tr>
+        <td rowspan="5"> 橫麥卡托 (Transverse Mercator) 系 </td>
+        <td> TM2 (TWD97，中央經線121度) </td>
+        <td> 適用臺灣本島，民國87年之後施行迄今 </td>
+        <td> EPSG:3826 </td>
+    </tr>
+    <tr>
+        <td> TM2 (TWD97，中央經線119度) </td>
+        <td> 適用澎湖金門馬祖，民國87年之後施行迄今 </td>
+        <td>EPSG:3825 </td>
+    </tr>
+    <tr>
+        <td> TM2 (TWD67，中央經線121度) </td>
+        <td> 適用臺灣本島，民國69年之後施行 </td>
+        <td> EPSG:3828 ([內建參數有誤，需自行修正](http://gis.rchss.sinica.edu.tw/qgis/?p=3542)) </td>
+    </tr>
+    <tr>
+        <td> TM3 (TWD67，中央經線121度) </td>
+        <td> 適用澎湖金門馬祖，民國69年之後施行 </td>
+        <td> EPSG:3827 </td>
+    </tr>
+    <tr>
+        <td> TM2 (TWD97，中央經線119度) </td>
+        <td> 適用臺灣本島及澎湖，民國58年之後短暫使用 </td>
+        <td> 無EPSG代號 ([需自行定義](http://gis.rchss.sinica.edu.tw/qgis/?p=3542)) </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 經緯度 (Latitude-Longitud) 系 </td>
+        <td> WGS84經緯度 </td>
+        <td> 全球性資料，如：GPS </td>
+        <td> EPSG:4326 </td>
+    </tr>
+    <tr>
+        <td> TWD97經緯度 </td>
+        <td> 國土測繪中心發佈全國性資料 </td>
+        <td> EPSG:3824 </td>
+    </tr>
+    <tr>
+        <td> TWD67經緯度 </td>
+        <td> 部分地籍圖圖解數化成果 </td>
+        <td> EPSG:3821 </td>
+    </tr>
+    <tr>
+        <td> 虎子山經緯度 </td>
+        <td> 日治時期陸測地形圖 </td>
+        <td> EPSG:4236 </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> 其他 </td>
+        <td> Spherical Mercator </td>
+        <td> 圖磚、WMTS，如：Google Map </td>
+        <td> EPSG:3857 </td>
+    </tr>
+    <tr>
+        <td> 虎子山UTM zone 51N </td>
+        <td> 中美合作軍用地形圖 </td>
+        <td> EPSG:3829 </td>
+    </tr>
+    <tr>
+        <td> 地籍坐標系 </td>
+        <td> 地籍坐標 </td>
+        <td> 地籍圖、河川地形圖、都市計畫地形圖使用 </td>
+        <td> 無EPSG代號，需先轉換成TM2坐標再套圖，單位有分為「間」、「公尺」兩類 </td>
+    </tr>
+</table>
 <br>
 
 ## 格式簡介
