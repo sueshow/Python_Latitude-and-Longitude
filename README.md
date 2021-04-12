@@ -33,7 +33,7 @@
     <tr>
         <td> TM2 (TWD67，中央經線121度) </td>
         <td> 適用臺灣本島，民國69年之後施行 </td>
-        <td> EPSG:3828 [內建參數有誤，需自行修正](http://gis.rchss.sinica.edu.tw/qgis/?p=3542) </td>
+        <td> EPSG:3828 <a href="http://gis.rchss.sinica.edu.tw/qgis/?p=3542">(內建參數有誤，需自行修正)</a> </td>
     </tr>
     <tr>
         <td> TM3 (TWD67，中央經線121度) </td>
@@ -43,7 +43,7 @@
     <tr>
         <td> TM2 (TWD97，中央經線119度) </td>
         <td> 適用臺灣本島及澎湖，民國58年之後短暫使用 </td>
-        <td> 無EPSG代號 [需自行定義](http://gis.rchss.sinica.edu.tw/qgis/?p=3542) </td>
+        <td> 無EPSG代號 <a href="http://gis.rchss.sinica.edu.tw/qgis/?p=3542">(需自行定義)</a> </td>
     </tr>
     <tr>
         <td rowspan="4"> 經緯度 (Latitude-Longitud) 系 </td>
