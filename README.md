@@ -48,7 +48,7 @@
     <tr>
         <td rowspan="4"> 經緯度 (Latitude-Longitud) 系 </td>
         <td> WGS84經緯度 </td>
-        <td> 全球性資料，如：GPS </td>
+        <td> 全球性資料，如：GPS、kml、geojson</td>
         <td> EPSG:4326 </td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@
     <tr>
         <td rowspan="2"> 其他 </td>
         <td> Spherical Mercator </td>
-        <td> 圖磚、WMTS，如：Google Map </td>
+        <td> 圖磚、WMS、WMTS等，如：Google Map </td>
         <td> EPSG:3857 </td>
     </tr>
     <tr>
