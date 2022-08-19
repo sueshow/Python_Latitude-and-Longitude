@@ -197,3 +197,4 @@ def getDistance(latA, lonA, latB, lonB):
 * http://gis.rchss.sinica.edu.tw/qgis/?p=2823
 * [座標解讀](https://www.sunriver.com.tw/grid_tm2.htm)
 * [經緯度距離](https://www.iteye.com/blog/mukeliang-2373903)
+* [如何計算經緯度之間的距離](https://www.cherryknow.com/tech/1130502.html)
