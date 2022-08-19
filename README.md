@@ -145,3 +145,4 @@ get_latitude_longtitude(address, GOOGLE_PLACES_API_KEY)
 * https://hiking.biji.co/index.php?q=news&act=info&id=11787
 * http://gis.rchss.sinica.edu.tw/qgis/?p=2823
 * [座標解讀](https://www.sunriver.com.tw/grid_tm2.htm)
+* [經緯度距離](https://www.iteye.com/blog/mukeliang-2373903)
