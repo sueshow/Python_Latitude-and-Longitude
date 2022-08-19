@@ -147,6 +147,11 @@ get_latitude_longtitude(address, GOOGLE_PLACES_API_KEY)
 
 
 ## 距離
+* 計算經緯度之間的距離：
+  * 計算地球上經緯度之間的距離 d，已知地球上兩點的經度、緯度：(X1,Y1), (X2,Y2)，其中 X1、X2為經度，Y1、Y2為緯度，視計算程式需要轉化為弧度 (*3.1415926/180) 地球半徑為 R=6371.0 km，則兩點距離 
+    * d = R*arcos[cos(Y1)*cos(Y2)*cos(X1-X2)+sin(Y1)*sin(Y2)]
+    * C = sin(MLatA)*sin(MLatB)*cos(MLonA-MLonB) + cos(MLatA)*cos(MLatB) <br>
+      Distance = R*Arccos(C)*Pi/180
 * SQL
 ```
 單位：公尺
