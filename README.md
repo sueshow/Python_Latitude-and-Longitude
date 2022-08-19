@@ -147,6 +147,7 @@ get_latitude_longtitude(address, GOOGLE_PLACES_API_KEY)
 
 
 ## 距離
+* SQL
 ```
 單位：公尺
 round(6378.138*2*asin(sqrt(pow(sin( (lat1*pi()/180-lat2*pi()/180)/2),2)+cos(lat1*pi()/180)*cos(lat2*pi()/180)* pow(sin( (lng1*pi()/180-lng2*pi()/180)/2),2)))*1000)
@@ -154,6 +155,35 @@ round(6378.138*2*asin(sqrt(pow(sin( (lat1*pi()/180-lat2*pi()/180)/2),2)+cos(lat1
 第一點的經緯度：lng1 lat1  
 第二點的經緯度：lng2 lat2
 ```
+<br>
+
+* Python
+```
+import math
+
+
+# 計算距離
+def getDistance(latA, lonA, latB, lonB):
+    ra = 6378140  # 赤道半徑
+    rb = 6356755  # 極半徑
+    flatten = (ra - rb) / ra  # Partial rate of the earth
+    # change angle to radians
+    radLatA = math.radians(latA)
+    radLonA = math.radians(lonA)
+    radLatB = math.radians(latB)
+    radLonB = math.radians(lonB)
+
+    pA = math.atan(rb / ra * math.tan(radLatA))
+    pB = math.atan(rb / ra * math.tan(radLatB))
+    x = math.acos(math.sin(pA) * math.sin(pB) + math.cos(pA) * math.cos(pB) * math.cos(radLonA - radLonB))
+    c1 = (math.sin(x) - x) * (math.sin(pA) + math.sin(pB)) ** 2 / math.cos(x / 2) ** 2
+    c2 = (math.sin(x) + x) * (math.sin(pA) - math.sin(pB)) ** 2 / math.sin(x / 2) ** 2
+    dr = flatten / 8 * (c1 - c2)
+    distance = ra * (x + dr)
+    distance = round(distance / 1000, 4)
+    return f'{distance}km'
+```
+<br>
 <br>
 
 
