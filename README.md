@@ -196,9 +196,6 @@
           <th width="5%">參數</a>
           <th width="10%">說明</a>
           <th width="5%">設定</a>
-          <th width="5%">參數</a>
-          <th width="10%">說明</a>
-          <th width="5%">設定</a>
         </tr>
         <tr>
           <td> oAPPId </td>
@@ -207,14 +204,16 @@
           <td> oAPIKey </td>
           <td> 應用程式介接驗證碼 </td>
           <td> APIKey </td>
+        </tr>
+        <tr>
           <td> oAddress </td>
           <td> 所要查詢的門牌位置 </td>
           <td> address </td>
-	</tr>
-        <tr>
-          <td> oSRS </td>
+	  <td> oSRS </td>
           <td> 回傳的坐標系統 </td>
           <td> 'EPSG:3826' </td>
+	</tr>
+        <tr>
           <td> oFuzzyType </td>
           <td> 模糊比對的代碼 </td>
           <td> '2' </td>
@@ -229,14 +228,16 @@
           <td> oIsOnlyFullMatch </td>
           <td> 是否只進行完全比對 </td>
           <td> 'false' </td>
+        </tr>
+        <tr>  
           <td> oIsSupportPast </td>
+          <td>  </td>
+          <td>  </td>
+          <td> oIsShowCodeBase </td>
           <td>  </td>
           <td>  </td>
         </tr>
         <tr> 
-          <td> oIsShowCodeBase </td>
-          <td>  </td>
-          <td>  </td>
           <td> oIsLockCounty </td>
           <td> 是否鎖定縣市 </td>
           <td> 'false' </td>
@@ -251,14 +252,16 @@
           <td> oIsLockRoadSection </td>
           <td> 是否鎖定路段 </td>
           <td> 'false' </td>
+	</tr>
+        <tr>         
           <td> oIsLockLane </td>
           <td> 是否鎖定巷 </td>
           <td> 'false' </td>
-        </tr>
-        <tr>
           <td> oIsLockAlley </td>
           <td> 是否鎖定弄 </td>
           <td> 'false' </td>
+	</tr>
+        <tr>
           <td> oIsLockArea </td>
           <td> 是否鎖定地區 </td>
           <td> 'false' </td>
@@ -273,9 +276,14 @@
           <td> oCanIgnoreNeighborhood </td>
           <td> 找不時是否可忽略鄰 </td>
           <td> 'false' </td>
+	</tr>
+        <tr>
           <td> oReturnMaxCount </td>
           <td> 如為多筆時，限制回傳最大筆數 </td>
           <td> 'false' </td>
+	  <td>  </td>
+          <td>  </td>
+	  <td>  </td>
         </tr>
       </table>
       <br>
