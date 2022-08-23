@@ -188,10 +188,10 @@
       <br>
   
     * 建議設定值： 
-      <table border="1" width="20%">
+      <table border="1" width="25%">
         <tr>
           <th width="5%">參數</a>
-          <th width="10%">說明</a>
+          <th width="15%">說明</a>
           <th width="5%">設定</a>
         </tr>
         <tr>
