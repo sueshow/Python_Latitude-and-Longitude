@@ -210,77 +210,80 @@
           <td> 所要查詢的門牌位置 </td>
           <td> address </td>
 	  <td> oSRS </td>
-          <td> 回傳的坐標系統 </td>
+          <td> 回傳的坐標系統，允許傳入的坐標系統代碼為：EPSG:4326、EPSG:3825、EPSG:3826、EPSG:3827、EPSG:3828 </td>
           <td> 'EPSG:3826' </td>
 	</tr>
         <tr>
           <td> oFuzzyType </td>
-          <td> 模糊比對的代碼 </td>
+          <td> 模糊比對的代碼 <br>
+	       (1) 最近門牌號機制：先找最近且小於輸入的門牌號，找不到則找最近且大於輸入的門牌號；代碼為 0 <br>
+               (2) 單雙號機制：先找最近且小於輸入的單號或雙號門牌號，找不到則找最近且大於輸入的單號或雙號門牌號；代碼為 1 <br>
+               (3) [單雙號機制]+[最近門牌號機制]：當單雙號機制找不到門牌時，就改採用最近門牌號機制；代碼為 2 </td>
           <td> '2' </td>
 	  <td> oResultDataType </td>
-          <td> 回傳的資料格式 </td>
+          <td> 回傳的資料格式，允許傳入的代碼為：JSON、XML </td>
           <td> 'json' </td>
         </tr>
         <tr>      
           <td> oFuzzyBuffer </td>
-          <td> 模糊比對回傳門牌號的許可誤差範圍 </td>
+          <td> 模糊比對回傳門牌號的許可誤差範圍，輸入格式為正整數，如輸入 0 則代表不限制誤差範圍 </td>
           <td> '0' </td>
           <td> oIsOnlyFullMatch </td>
-          <td> 是否只進行完全比對 </td>
+          <td> 是否只進行完全比對，允許傳入的值為：true、false </td>
           <td> 'false' </td>
         </tr>
         <tr>  
           <td> oIsSupportPast </td>
-          <td>  </td>
+          <td> 是否支援舊門牌的查詢，允許傳入的值為：true、false </td>
           <td>  </td>
           <td> oIsShowCodeBase </td>
-          <td>  </td>
+          <td> 是否顯示地址的統計區相關資訊，允許傳入的值為：true、false </td>
           <td>  </td>
         </tr>
         <tr> 
           <td> oIsLockCounty </td>
-          <td> 是否鎖定縣市 </td>
+          <td> 是否鎖定縣市，允許傳入的值為：true、false </td>
           <td> 'false' </td>
           <td> oIsLockTown </td>
-          <td> 是否鎖定鄉鎮市區 </td>
+          <td> 是否鎖定鄉鎮市區，允許傳入的值為：true、false </td>
           <td> 'false' </td>
 	</tr>
         <tr> 
           <td> oIsLockVillage </td>
-          <td> 是否鎖定村里 </td>
+          <td> 是否鎖定村里，允許傳入的值為：true、false </td>
           <td> 'false' </td>
           <td> oIsLockRoadSection </td>
-          <td> 是否鎖定路段 </td>
+          <td> 是否鎖定路段，允許傳入的值為：true、false </td>
           <td> 'false' </td>
 	</tr>
         <tr>         
           <td> oIsLockLane </td>
-          <td> 是否鎖定巷 </td>
+          <td> 是否鎖定巷，允許傳入的值為：true、false </td>
           <td> 'false' </td>
           <td> oIsLockAlley </td>
-          <td> 是否鎖定弄 </td>
+          <td> 是否鎖定弄，允許傳入的值為：true、false </td>
           <td> 'false' </td>
 	</tr>
         <tr>
           <td> oIsLockArea </td>
-          <td> 是否鎖定地區 </td>
+          <td> 是否鎖定地區，允許傳入的值為：true、false </td>
           <td> 'false' </td>
           <td> oIsSameNumber_SubNumber </td>
-          <td> 號之、之號是否視為相同 </td>
+          <td> 號之、之號是否視為相同，允許傳入的值為：true、false </td>
           <td> 'false' </td>
 	</tr>
         <tr>
           <td> oCanIgnoreVillage </td>
-          <td> 找不時是否可忽略村里 </td>
+          <td> 找不時是否可忽略村里，允許傳入的值為：true、false</td>
           <td> 'false' </td>
           <td> oCanIgnoreNeighborhood </td>
-          <td> 找不時是否可忽略鄰 </td>
+          <td> 找不時是否可忽略鄰，允許傳入的值為：true、false </td>
           <td> 'false' </td>
 	</tr>
         <tr>
           <td> oReturnMaxCount </td>
-          <td> 如為多筆時，限制回傳最大筆數 </td>
-          <td> 'false' </td>
+          <td> 如為多筆時，限制回傳最大筆數(1~9)，如輸入 0 則以本服務上限10筆進行回傳 </td>
+          <td> '0' </td>
 	  <td>  </td>
           <td>  </td>
 	  <td>  </td>
