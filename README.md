@@ -188,11 +188,11 @@
       <br>
   
     * 建議設定值： 
-      <table border="1" width="35%">
+      <table border="1" width="20%">
         <tr>
-          <th width="3%">參數</a>
-          <th width="20%">說明</a>
-          <th width="2%">設定</a>
+          <th width="2%">參數</a>
+          <th width="17%">說明</a>
+          <th width="1%">設定</a>
         </tr>
         <tr>
           <td> oAPPId </td>
