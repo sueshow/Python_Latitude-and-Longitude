@@ -153,6 +153,158 @@
       ```
 <br>
 
+  * 方法四：內政部 TGOS
+    * 比較差異：
+      <table border="1" width="2%">
+        <tr>
+          <th width="2%">版本</a>
+          <th width="10%">參數</a>
+          <th width="10%">回傳結果</a>
+        </tr>
+        <tr>
+          <td> V4.0 </td>
+          <td> QueryAddr(oAPPId, oAPIKey, oAddress, oSRS, oFuzzyType, <br>
+                         oResultDataType, oFuzzyBuffer, oIsOnlyFullMatch, oIsSupportPast, oIsShowCodeBase, <br>
+                         oIsLockCounty, oIsLockTown, oIsLockVillage, oIsLockRoadSection, oIsLockLane, <br>
+		                 oIsLockAlley, oIsLockArea, oIsSameNumber_SubNumber, oCanIgnoreVillage, oCanIgnoreNeighborhood, <br>
+		                 oReturnMaxCount) </td>
+          <td> ("期別", 完整地址", "縣市", "鄉鎮市區", "村里", <br>
+                "鄰", "大道路街", "段", "巷", "弄", <br>
+                "衖", "衕", "門牌號碼", "X坐標", "Y坐標", <br>
+                "最小統計區", "一級統計區", "二級統計區") </td>
+        </tr>
+        <tr>
+          <td> V3.0 </td>
+          <td> QueryAddr(oAPPId, oAPIKey, oAddress, oSRS, oFuzzyType, <br>
+                         oResultDataType, oFuzzyBuffer, oIsOnlyFullMatch, <br>
+		                 oIsLockCounty, oIsLockTown, oIsLockVillage, oIsLockRoadSection, oIsLockLane, <br> 
+		                 oIsLockAlley, oIsLockArea, oIsSameNumber_SubNumber, oCanIgnoreVillage, oCanIgnoreNeighborhood, <br> 
+		                 oReturnMaxCount) </td>
+          <td> (        完整地址", "縣市", "鄉鎮市區", "村里", <br>
+                "鄰", "大道路街", "段", "巷", "弄", <br>
+                "衖", "衕", "門牌號碼", "X坐標", "Y坐標") </td>
+        </tr>
+      </table>
+      <br>
+  
+    * 建議設定值： 
+      <table border="1" width="125%">
+        <tr>
+          <th width="5%">參數</a>
+          <th width="10%">說明</a>
+          <th width="10%">設定</a>
+          <th width="5%">參數</a>
+          <th width="10%">說明</a>
+          <th width="10%">設定</a>
+          <th width="5%">參數</a>
+          <th width="10%">說明</a>
+          <th width="10%">設定</a>
+          <th width="5%">參數</a>
+          <th width="10%">說明</a>
+          <th width="10%">設定</a>
+          <th width="5%">參數</a>
+          <th width="10%">說明</a>
+          <th width="10%">設定</a>
+        </tr>
+        <tr>
+          <td> oAPPId </td>
+          <td> 應用程式識別碼 </td>
+          <td> AppID </td>
+          <td> oAPIKey </td>
+          <td> 應用程式介接驗證碼 </td>
+          <td> APIKey </td>
+          <td> oAddress </td>
+          <td> 所要查詢的門牌位置 </td>
+          <td> address </td>
+          <td> oSRS </td>
+          <td> 回傳的坐標系統 </td>
+          <td> 'EPSG:3826' </td>
+          <td> oFuzzyType </td>
+          <td> 模糊比對的代碼 </td>
+          <td> '2' </td>
+        </tr>
+        <tr>
+          <td> oResultDataType </td>
+          <td> 回傳的資料格式 </td>
+          <td> 'json' </td>
+          <td> oFuzzyBuffer </td>
+          <td> 模糊比對回傳門牌號的許可誤差範圍 </td>
+          <td> '0' </td>
+          <td> oIsOnlyFullMatch </td>
+          <td> 是否只進行完全比對 </td>
+          <td> 'false' </td>
+          <td> oIsSupportPast </td>
+          <td>  </td>
+          <td>  </td>
+          <td> oIsShowCodeBase </td>
+          <td>  </td>
+          <td>  </td>
+        </tr>
+        <tr>          
+          <td> oIsLockCounty </td>
+          <td> 是否鎖定縣市 </td>
+          <td> 'false' </td>
+          <td> oIsLockTown </td>
+          <td> 是否鎖定鄉鎮市區 </td>
+          <td> 'false' </td>
+          <td> oIsLockVillage </td>
+          <td> 是否鎖定村里 </td>
+          <td> 'false' </td>
+          <td> oIsLockRoadSection </td>
+          <td> 是否鎖定路段 </td>
+          <td> 'false' </td>
+          <td> oIsLockLane </td>
+          <td> 是否鎖定巷 </td>
+          <td> 'false' </td>
+        </tr>
+        <tr>
+          <td> oIsLockAlley </td>
+          <td> 是否鎖定弄 </td>
+          <td> 'false' </td>
+          <td> oIsLockArea </td>
+          <td> 是否鎖定地區 </td>
+          <td> 'false' </td>
+          <td> oIsSameNumber_SubNumber </td>
+          <td> 號之、之號是否視為相同 </td>
+          <td> 'false' </td>
+          <td> oCanIgnoreVillage </td>
+          <td> 找不時是否可忽略村里 </td>
+          <td> 'false' </td>
+          <td> oCanIgnoreNeighborhood </td>
+          <td> 找不時是否可忽略鄰 </td>
+          <td> 'false' </td>
+        </tr>
+        <tr>
+          <td> oReturnMaxCount </td>
+          <td> 如為多筆時，限制回傳最大筆數 </td>
+          <td> 'false' </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+          <td>  </td>
+        </tr>
+        <tr>
+          <td> V3.0 </td>
+          <td> QueryAddr(oAPPId, oAPIKey, oAddress, oSRS, oFuzzyType, <br>
+                         oResultDataType, oFuzzyBuffer, oIsOnlyFullMatch, <br>
+		                 oIsLockCounty, oIsLockTown, oIsLockVillage, oIsLockRoadSection, oIsLockLane, <br> 
+		                 oIsLockAlley, oIsLockArea, oIsSameNumber_SubNumber, oCanIgnoreVillage, oCanIgnoreNeighborhood, <br> 
+		                 oReturnMaxCount) </td>
+          <td> (        完整地址", "縣市", "鄉鎮市區", "村里", <br>
+                "鄰", "大道路街", "段", "巷", "弄", <br>
+                "衖", "衕", "門牌號碼", "X坐標", "Y坐標") </td>
+        </tr>
+      </table>
+      <br>
+
 
 ## 距離
 * 計算經緯度之間的距離：
