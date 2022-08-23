@@ -291,17 +291,6 @@
           <td>  </td>
           <td>  </td>
         </tr>
-        <tr>
-          <td> V3.0 </td>
-          <td> QueryAddr(oAPPId, oAPIKey, oAddress, oSRS, oFuzzyType, <br>
-                         oResultDataType, oFuzzyBuffer, oIsOnlyFullMatch, <br>
-		                 oIsLockCounty, oIsLockTown, oIsLockVillage, oIsLockRoadSection, oIsLockLane, <br> 
-		                 oIsLockAlley, oIsLockArea, oIsSameNumber_SubNumber, oCanIgnoreVillage, oCanIgnoreNeighborhood, <br> 
-		                 oReturnMaxCount) </td>
-          <td> (        完整地址", "縣市", "鄉鎮市區", "村里", <br>
-                "鄰", "大道路街", "段", "巷", "弄", <br>
-                "衖", "衕", "門牌號碼", "X坐標", "Y坐標") </td>
-        </tr>
       </table>
       <br>
 
