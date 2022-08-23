@@ -188,21 +188,15 @@
       <br>
   
     * 建議設定值： 
-      <table border="1" width="60%">
+      <table border="1" width="45%">
         <tr>
-          <th width="2%">參數</a>
+          <th width="5%">參數</a>
           <th width="5%">說明</a>
           <th width="5%">設定</a>
-          <th width="2%">參數</a>
+          <th width="5%">參數</a>
           <th width="5%">說明</a>
           <th width="5%">設定</a>
-          <th width="2%">參數</a>
-          <th width="5%">說明</a>
-          <th width="5%">設定</a>
-          <th width="2%">參數</a>
-          <th width="5%">說明</a>
-          <th width="5%">設定</a>
-          <th width="2%">參數</a>
+          <th width="5%">參數</a>
           <th width="5%">說明</a>
           <th width="5%">設定</a>
         </tr>
@@ -216,17 +210,19 @@
           <td> oAddress </td>
           <td> 所要查詢的門牌位置 </td>
           <td> address </td>
+	</tr>
+        <tr>
           <td> oSRS </td>
           <td> 回傳的坐標系統 </td>
           <td> 'EPSG:3826' </td>
           <td> oFuzzyType </td>
           <td> 模糊比對的代碼 </td>
           <td> '2' </td>
-        </tr>
-        <tr>
-          <td> oResultDataType </td>
+	  <td> oResultDataType </td>
           <td> 回傳的資料格式 </td>
           <td> 'json' </td>
+        </tr>
+        <tr>      
           <td> oFuzzyBuffer </td>
           <td> 模糊比對回傳門牌號的許可誤差範圍 </td>
           <td> '0' </td>
@@ -236,17 +232,19 @@
           <td> oIsSupportPast </td>
           <td>  </td>
           <td>  </td>
+        </tr>
+        <tr> 
           <td> oIsShowCodeBase </td>
           <td>  </td>
           <td>  </td>
-        </tr>
-        <tr>          
           <td> oIsLockCounty </td>
           <td> 是否鎖定縣市 </td>
           <td> 'false' </td>
           <td> oIsLockTown </td>
           <td> 是否鎖定鄉鎮市區 </td>
           <td> 'false' </td>
+	</tr>
+        <tr> 
           <td> oIsLockVillage </td>
           <td> 是否鎖定村里 </td>
           <td> 'false' </td>
@@ -267,29 +265,17 @@
           <td> oIsSameNumber_SubNumber </td>
           <td> 號之、之號是否視為相同 </td>
           <td> 'false' </td>
+	</tr>
+        <tr>
           <td> oCanIgnoreVillage </td>
           <td> 找不時是否可忽略村里 </td>
           <td> 'false' </td>
           <td> oCanIgnoreNeighborhood </td>
           <td> 找不時是否可忽略鄰 </td>
           <td> 'false' </td>
-        </tr>
-        <tr>
           <td> oReturnMaxCount </td>
           <td> 如為多筆時，限制回傳最大筆數 </td>
           <td> 'false' </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
         </tr>
       </table>
       <br>
