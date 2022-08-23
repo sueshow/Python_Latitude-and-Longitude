@@ -154,7 +154,11 @@
 <br>
 
   * 方法四：內政部 TGOS
-    * 比較差異：
+    * 重要
+      * 地址需使用 UTF-8
+      * APPID 和 APPKEY 需要再做一次 URLENCODE
+      * TGOS WEBSERVICE 使用 RESTFUL，請使用 HTTP POST
+    * 比較差異
       <table border="1" width="2%">
         <tr>
           <th width="2%">版本</a>
