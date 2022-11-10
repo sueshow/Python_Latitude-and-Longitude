@@ -385,3 +385,12 @@ def getDistance(latA, lonA, latB, lonB):
 * [經緯度距離](https://www.iteye.com/blog/mukeliang-2373903)
 * [如何計算經緯度之間的距離](https://www.cherryknow.com/tech/1130502.html)
 * [全國門牌地址定位服務](https://www.tgos.tw/tgos/Web/Address/TGOS_Address.aspx)
+<br>
+
+## Open Data
+* [代碼服務－縣市清單](https://data.gov.tw/dataset/101905)
+* [代碼服務－鄉鎮市區清單(戶政)](https://data.gov.tw/dataset/102011)
+* [代碼服務－鄉鎮市區清單(地政)](https://data.gov.tw/dataset/102013)
+* [代碼服務－村里清單](https://data.gov.tw/dataset/102017)
+* [全國路名資料](https://data.gov.tw/dataset/35321)
+<br>
