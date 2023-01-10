@@ -381,6 +381,7 @@ def getDistance(latA, lonA, latB, lonB):
 ## 參考資料
 * https://hiking.biji.co/index.php?q=news&act=info&id=11787
 * http://gis.rchss.sinica.edu.tw/qgis/?p=2823
+* [Google Maps JavaScript API 申請 – 網站啟用 Google 地圖教學](https://www.design-hu.com.tw/wordpress/wordpress-tools/google-maps-javascript-api.html)
 * [座標解讀](https://www.sunriver.com.tw/grid_tm2.htm)
 * [經緯度距離](https://www.iteye.com/blog/mukeliang-2373903)
 * [如何計算經緯度之間的距離](https://www.cherryknow.com/tech/1130502.html)
